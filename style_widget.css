@@ -1,0 +1,313 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.big_container {
+    background-color: #e1eff5;
+    width: 90%;
+    padding: 10px;
+
+}
+
+
+.container {
+    background-color: #5ca7c9;
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+
+}
+
+.logo {
+    background-image: url(nuages.jpg);
+    text-align: center;
+    font-size: larger;
+    font-style: bold;
+    color: white;
+    width: 80%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.search {
+    background-color: #3f98c0;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.medium_container {
+    border: 2px solid #dadbef;
+
+}
+
+.little_container_main {
+    border: 2px solid #dadbef;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+
+#ville {
+    background-color: #3f98c0;
+    border-radius: 15px;
+    padding: 120px;
+    margin: 10px;
+    font-style: bold;
+    color: white;
+
+}
+
+#temperature {
+    background-color: #3f98c0;
+    border-radius: 15px;
+    padding: 120px;
+    margin: 10px;
+    font-style: bold;
+    color: white;
+
+}
+
+.little_container_second {
+    border: 2px solid #dadbef;
+    padding: 10px;
+    border: 2px solid #dadbef;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+
+}
+
+
+#humidite {
+    background-color: #3f98c0;
+    border-radius: 15px;
+    padding: 120px;
+    margin: 10px;
+    font-style: bold;
+    color: white;
+}
+
+#vent {
+    background-color: #3f98c0;
+    border-radius: 15px;
+    padding: 120px;
+    margin: 10px;
+    font-style: bold;
+    color: white;
+}
+
+.footer {
+    background-image: url(nuages.jpg);
+    width: 72%;
+    font-style: bold;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+/*mode mobile*/
+@media (max-width: 650px) {
+    .container {
+        background-color: #5ca7c9;
+        border-radius: 5px;
+        width: 80%;
+        padding: 10px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+
+    }
+
+    .logo {
+        background-image: url(nuages.jpg);
+        text-align: center;
+        font-size: larger;
+        font-style: bold;
+        color: white;
+        width: 80%;
+        border-radius: 5px;
+        padding: 10px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    .search {
+        background-color: #3f98c0;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .medium_container {
+        border: 2px solid #dadbef;
+
+    }
+
+    .little_container_main {
+        border: 2px solid #dadbef;
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
+    }
+
+    .little_container_second {
+        border: 2px solid #dadbef;
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
+    }
+
+    .footer {
+        background-image: url(nuages.jpg);
+        width: 78%;
+        font-style: bold;
+        color: white;
+        border-radius: 5px;
+        padding: 20px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+}
+
+
+/*mode desktop*/
+@media (min-width: 650px) {
+    .big_container {
+        background-color: #e1eff5;
+        width: 90%;
+        padding: 10px;
+
+    }
+
+
+    .container {
+        background-color: #5ca7c9;
+        border-radius: 5px;
+        width: 80%;
+        padding: 10px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+
+    }
+
+    .logo {
+        background-image: url(nuages.jpg);
+        text-align: center;
+        font-size: larger;
+        font-style: bold;
+        color: white;
+        width: 80%;
+        border-radius: 5px;
+        padding: 10px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    .search {
+        background-color: #3f98c0;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .medium_container {
+        border: 2px solid #dadbef;
+
+    }
+
+    .little_container_main {
+        border: 2px solid #dadbef;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
+    }
+
+    .ville {
+        background-color: #3f98c0;
+        border-radius: 15px;
+        padding: 120px;
+        margin: 10px;
+        font-style: bold;
+        color: white;
+
+    }
+
+    .temperature {
+        background-color: #3f98c0;
+        border-radius: 15px;
+        padding: 120px;
+        margin: 10px;
+        font-style: bold;
+        color: white;
+
+    }
+
+    .little_container_second {
+        border: 2px solid #dadbef;
+        padding: 10px;
+        border: 2px solid #dadbef;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
+
+    }
+
+
+    .humidite {
+        background-color: #3f98c0;
+        border-radius: 15px;
+        padding: 120px;
+        margin: 10px;
+        font-style: bold;
+        color: white;
+    }
+
+    .vent {
+        background-color: #3f98c0;
+        border-radius: 15px;
+        padding: 120px;
+        margin: 10px;
+        font-style: bold;
+        color: white;
+    }
+
+    .footer {
+        background-image: url(nuages.jpg);
+        width: 78%;
+        font-style: bold;
+        color: white;
+        border-radius: 5px;
+        padding: 20px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+}

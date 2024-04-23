@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_widget.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap">
+    <title>What Weather</title>
+</head>
+
+<body>
+
+    <div class="big_container">
+        <div class="logo" img src="nuages.jpg" alt="image nuages">
+            <h1>
+                WHATweather</h1>
+        </div>
+        <div class="container">
+
+            <div class="search">
+
+                <form class="block_search_form">
+                    <label for="nom_ville">Entrer le nom d'une ville</label><br>
+                    <input type="text" id="recherche_ville_formulaire" name="Ville" value="" required /><br>
+                    <button id="btn" type="submit">Recherche</button>
+                </form>
+            </div>
+            <div class="medium_container">
+                <div class="little_container_main">
+                    <div id="ville">Nom de ville + météo</div>
+                    <div id="temperature">température</div>
+                </div>
+                <div class="little_container_second">
+                    <div id="humidite">humidité</div>
+                    <div id="vent">vitesse du vent</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    </div>
+</body>
+<script src="js-meteo.js"></script>
+
+</html>

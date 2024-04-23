@@ -1,0 +1,29 @@
+Les procédures stockées sont des requêtes SQL qui sont stockées dans la base de données,
+et remlissent le rôle de fonctions qui s’exécutent à la demande, elles sont plus utilisées
+dans des systèmes où l’on veut renforcer la sécurité, et la vitesse.
+
+On appelle une procédure stockée en utilisant l’instruction CALL suivi du nom de la procédure stockée.
+
+Vous pouvez vous aider de PHPMyAdmin pour créer une procédure stockée et l’enregistrer.
+Le plus simple est d’abord de s’aider de l’éditeur intégré à PHPMyAdmin pour en créer une :
+select O.order_id, SUM(OI.quantity * OI.list_price) as total
+from orders O inner join order_items OI ON O.order_id = OI.order_id
+GROUP BY O.order_id
+
+Cette requête est à mettre dans l’éditeur de procédure stockée. Le code SQL résultant de la création
+de la procédure est visible aprs validation:
+CREATE PROCEDURE GetPanier() NOT DETERMINISTIC CONTAINS SQL SQL SECURITY DEFINER select O.order_id,
+SUM(OI.quantity * OI.list_price) as total
+from orders O inner join order_items OI ON O.order_id = OI.order_id
+GROUP BY O.order_id
+
+Et ensuite on appelle cette procédure avec un CALL tout simpolement
+CALL GetPanier
+
+Les procédure stockée sont appelables aussi depuis un langage de programmation.
+
+Autres commandes :
+Montrer toutes les procédures stockées:
+SHOW PROCEDURE STATUS;
+Montrer le code d'une procédure :
+SHOW CREATE PROCEDURE maprocedure;
